@@ -47,6 +47,7 @@ The script must be run at specified intervals using automation of some kind. I u
 http://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man1/crontab.1.html
 
 I instruct GeekTool to execute the script every 15 minutes (1800 seconds). Use this line in GeekTool's command field:
+
     osascript ~/Pictures/Wallpapers/Time\ of\ Day/wallpaper.scpt
 
 
