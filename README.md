@@ -1,11 +1,11 @@
 OS-X-Wallpaper-Changer
 ======================
 
-Applescript for changing the Mac OS X desktop picture based on the time of day
+Applescript for changing the Mac OS X desktop picture based on the time of day and the season
 
-- Philip Hutchison, April 2013
-- http://pipwerks.com
-- MIT license http://pipwerks.mit-license.org/
+- Perceval FARAMAZ, November 2013 (for this version)
+- Forked from : https://github.com/pipwerks/OS-X-Wallpaper-Changer
+- MIT license
 
 ##What it does
 This is an AppleScript that changes your Mac's desktop picture based on the time of day.  The day is split into six 'periods':
@@ -17,10 +17,15 @@ This is an AppleScript that changes your Mac's desktop picture based on the time
 - Evening Early (6:01pm - 9:00pm)
 - Evening Late (9:01pm - 12:00am)
 
-Each period has a corresponding folder, which is meant to store images that evoke the period in question. For example, you could have a picture of a sunset in the "Evening Early" folder, or a picture of the moon in the "Evening Late" folder.
+And 4 season :
+- Winter (Jan-Feb-Mar)
+- Spring (Apr-May-Jun)
+- Summer (Jul-Aug-Sep)
+- Fall (Oct-Nov-Dec)
 
-    /Users/YOUR_USER_NAME/Pictures/Wallpapers/Time of Day/Evening Early/sunset.jpg
-    /Users/YOUR_USER_NAME/Pictures/Wallpapers/Time of Day/Evening Late/moon.jpg
+Each period has a corresponding folder, which is meant to store images that evoke the period in question.
+
+    /Users/{Username}/Pictures/Wallpapers/{Season}/{Time of day}/image.jpg
 
 **The script will randomly select an image from the corresponding folder.** The image can be in any supported file type, including JPG, GIF and PNG images.
 
@@ -29,26 +34,22 @@ Each period has a corresponding folder, which is meant to store images that evok
 ###Folder structure
 If you choose to use the default settings, all you need to do is create folders in your `Pictures` folder that correspond to the following sample paths:
 
-- `~/Pictures/Wallpapers/Time of Day/Morning Early/`
-- `~/Pictures/Wallpapers/Time of Day/Morning Late/`
-- `~/Pictures/Wallpapers/Time of Day/Afternoon Early/`
-- `~/Pictures/Wallpapers/Time of Day/Afternoon Late/`
-- `~/Pictures/Wallpapers/Time of Day/Evening Early/`
-- `~/Pictures/Wallpapers/Time of Day/Evening Late/`
+- `~/Pictures/Wallpapers/Winter/Morning Early/`
+- `~/Pictures/Wallpapers/Winter/Morning Late/`
+- `~/Pictures/Wallpapers/Winter/Afternoon Early/`
+- `~/Pictures/Wallpapers/Winter/Afternoon Late/`
+- `~/Pictures/Wallpapers/Winter/Evening Early/`
+- `~/Pictures/Wallpapers/Winter/Evening Late/`
+And so on for each season.
+OR you can download the folder named "Wallpaper" (scroll up).
 
 ###Images
 You must supply your own images. Personally, I downloaded images from NationalGeographic.com, which provides high quality free wallpaper images. http://ngm.nationalgeographic.com/wallpaper/download
  
 ###Script file
-This script file itself can be located anywhere. I keep mine in the `/Pictures/Wallpapers/Time of Day/` folder.
+This script file itself can be located anywhere.
 
 The script must be run at specified intervals using automation of some kind. I use GeekTool, but you may also use a built-in service such as crontab. 
-
-http://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man1/crontab.1.html
-
-I instruct GeekTool to execute the script every 15 minutes (1800 seconds). Use this line in GeekTool's command field:
-
-    osascript ~/Pictures/Wallpapers/Time\ of\ Day/wallpaper.scpt
 
 
 ##Customization
