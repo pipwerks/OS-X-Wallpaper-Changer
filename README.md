@@ -40,6 +40,8 @@ If you choose to use the default settings, all you need to do is create folders 
 - `~/Pictures/Wallpapers/Winter/Afternoon Late/`
 - `~/Pictures/Wallpapers/Winter/Evening Early/`
 - `~/Pictures/Wallpapers/Winter/Evening Late/`
+
+
 And so on for each season.
 OR you can download the folder named "Wallpaper" (scroll up).
 
