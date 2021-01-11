@@ -1,3 +1,6 @@
+# This script is no longer supported, and is no longer necessary. Repo is in read-only mode
+Starting with Mokave in 2018, macOS natively supports dynamic wallpapers. Here is a good article outlining how to rotate your custom wallpaper images with no scripting required. https://appleinsider.com/articles/18/10/01/how-to-create-your-own-dynamic-desktops-in-macos-mojave
+
 # OS-X-Wallpaper-Changer
 
 Applescript for changing the Mac OS X desktop picture based on the time of day
